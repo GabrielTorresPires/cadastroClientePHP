@@ -35,59 +35,54 @@
   </div>
 </nav>
 
-<div class = "container">
-
-<div class="row" style=" margin-top: 100px;"> 
-  <h2>Dados do Cliente</h2>
-  <div class="row">
-    <div class="col-12 espaco">
-      <input type="text" class="form-control" placeholder="Nome do Cliente" aria-label="Nome do cliente">
-    </div>
-    <div class="col-10 espaco">
-      <input type="number" class="form-control" placeholder="CEP" aria-label="CEP">
-    </div>
-    <div class="col-2 espaco">
-      <input type="text" class="form-control" placeholder="Estado" aria-label="Estado">
-    </div>
-    <div class="col-6 espaco">
-      <input type="text" class="form-control" placeholder="Cidade" aria-label="Cidade">
-    </div>
-    <div class="col-6 espaco">
-      <input type="text" class="form-control" placeholder="Bairro" aria-label="Bairro">
-    </div>
-    <div class="col-8 espaco">
-      <input type="text" class="form-control" placeholder="Endereço" aria-label="Endereço">
-    </div>
-    <div class="col-4 espaco">
-      <input type="number" class="form-control" placeholder="Número" aria-label="Número">
-    </div>
-    <div class="col-6 espaco">
-      <input type="number" class="form-control" placeholder="RG" aria-label="RG">
-    </div>
-    <div class="col-6 espaco">
-      <input type="number" class="form-control" placeholder="CPF" aria-label="CPF">
-    </div>
-    <div class="col-6 espaco">
-      <input type="number" class="form-control" placeholder="Telefone" aria-label="Telefone">
-    </div>
-    <div class="col-6 espaco">
-      <input type="text" class="form-control" placeholder="E-mail" aria-label="Email">
-    </div>
-    
-    <div class="col-8"></div>
-      <div class="col-4">
-        <button type="submit" class="btn btn-primary">Cadastrar</button>
+<form action="insert.php" method="post">
+  <div class = "container">
+    <div class="row" style=" margin-top: 100px;"> 
+      <h2>Dados do Cliente</h2>
+      <div class="row">
+        <div class="col-12 espaco">
+          <input type="text" name="nome" class="form-control" placeholder="Nome do Cliente" aria-label="Nome do cliente">
+        </div>
+        <div class="col-10 espaco">
+          <input type="number" name="cep" class="form-control" placeholder="CEP" aria-label="CEP">
+        </div>
+        <div class="col-2 espaco">
+          <input type="text" name="estado" class="form-control" placeholder="Estado" aria-label="Estado">
+        </div>
+        <div class="col-6 espaco">
+          <input type="text" name="cidade" class="form-control" placeholder="Cidade" aria-label="Cidade">
+        </div>
+        <div class="col-6 espaco">
+          <input type="text" name="bairro" class="form-control" placeholder="Bairro" aria-label="Bairro">
+        </div>
+        <div class="col-8 espaco">
+          <input type="text" name="endereco" class="form-control" placeholder="Endereço" aria-label="Endereço">
+        </div>
+        <div class="col-4 espaco">
+          <input type="number" name='nr_endereco' class="form-control" placeholder="Número" aria-label="Número">
+        </div>
+        <div class="col-6 espaco">
+          <input type="text" name="rg" class="form-control" placeholder="RG" aria-label="RG">
+        </div>
+        <div class="col-6 espaco">
+          <input type="text" name="cpf" class="form-control" placeholder="CPF" aria-label="CPF">
+        </div>
+        <div class="col-6 espaco">
+          <input type="text" name="telefone" class="form-control" placeholder="Telefone" aria-label="Telefone">
+        </div>
+        <div class="col-6 espaco">
+          <input type="text" name="email" class="form-control" placeholder="E-mail" aria-label="Email">
+        </div>
+        
+        <div class="col-8"></div>
+          <div class="col-4">
+            <input class="btn btn-success" type="submit" value="cadastrar">
+          </div>
+        </div>
       </div>
-      
-
     </div>
-  
-
   </div>
-</div>
-
-</div>
-
+</form>
 
     
 </body>
